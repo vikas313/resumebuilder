@@ -1,0 +1,16 @@
+/* img {
+    float: right;
+  }
+   */
+  h1 {
+    text-align: center;
+    color:blue;
+  }
+  /* img{
+    position: absolute;
+    margin-top: -20%;
+  } */
+  .address{
+    display: flex;
+    justify-content: space-between;
+  }

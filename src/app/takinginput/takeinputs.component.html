@@ -1,0 +1,77 @@
+<form (ngSubmit)="Submit(f)" #f="ngForm" *ngIf="!isvalid">
+  <span>
+    <label for="name">Name :</label>
+    <input type="text" ngModel name="name" required />
+  </span>
+
+  <span>
+    <label for="email">Email :</label>
+    <input type="email" ngModel name="email" required />
+  </span>
+  <span>
+    <label for="linkedin">Linkedin :</label>
+    <input type="text" ngModel name="linkedin" required />
+  </span>
+  <span>
+    <label for="status">Martial Status :</label>
+    <!-- <input type="text" ngModel name="status" required /> -->
+    <select name="status" id="status"  ngModel required >
+      <option value="married">married</option>
+      <option value="married"  selected>Single</option>
+    </select>
+  </span>
+  <span>
+    <label for="nationality">Nationality :</label>
+    <input type="text" ngModel name="nation" required />
+  </span>
+  <span>
+    <label for="dob">Date of Birth :</label>
+    <input type="text" ngModel name="dob" required />
+  </span>
+  <span>
+    <label for="house">H-No :</label>
+    <input type="text" ngModel name="houseno" required />
+  </span>
+  <span>
+    <label for="city">city/village :</label>
+    <input type="text" ngModel name="city" required />
+  </span>
+  <span>
+    <label for="dictrict">District :</label>
+    <input type="text" ngModel name="district" required />
+  </span>
+  <span>
+    <label for="state">State :</label>
+    <input type="text" ngModel name="state" required />
+  </span>
+  <span>
+    <label for="image">image :</label>
+    <input type="text" ngModel name="image"  placeholder="enter URL" required />
+    
+  </span>
+  
+
+  <span>
+    <label for="pincode">pin-code :</label>
+    <input type="number" ngModel name="pincode" required />
+  </span>
+  <span>
+    <label for="degree">Highest Degree :</label>
+    <input type="text" ngModel name="degree" required />
+  </span>
+
+  <span>
+    <label for="phone">phone Number :</label>
+    <input type="number" ngModel name="phone" required />
+  </span>
+  <button type="submit">submit</button>
+</form>
+
+
+
+<!-- <form  *ngIf="!isvalid  && !is2valid " >
+    <span>
+        <label for="">college :</label>
+        <input type="text">
+    </span>
+</form> -->

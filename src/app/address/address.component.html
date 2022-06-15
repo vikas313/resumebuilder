@@ -1,0 +1,28 @@
+<div class="address">
+
+  <span>
+    <h2>{{ setails.name }}</h2>
+    <h2>{{ setails.degree }}</h2>
+  </span>
+  <address>
+    <h3>Address :</h3>
+    H-No : {{ setails.houseno }},<br />
+    {{ setails.city }},<br />
+    {{ setails.district }} District , <br />
+    {{ setails.state }} State,<br />
+    Pin-Code {{ setails.pincode }}<br />
+    {{ setails.email }}<br />
+    {{ setails.linkedin }}
+  </address>
+  <span>
+    <h3>Personal Details :</h3>
+    <p>{{ setails.dob }}</p>
+    <p>{{ setails.nation }}</p>
+    <p>{{ setails.status }}</p>
+    <p>{{ setails.phone }}</p>
+  </span>
+
+  <img src="{{ setails.image }}" alt="{{setails.name}}.jpg" height="130" width="130" />
+</div>
+
+<hr />

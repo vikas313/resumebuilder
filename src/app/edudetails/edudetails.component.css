@@ -1,0 +1,14 @@
+table{
+    border: 1px solid black;
+    text-align: center;
+    width: 80%;
+
+}
+td, tr {
+    border: 1px solid black;
+}
+.tablediv{
+    
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,37 @@
+<form  (ngSubmit)="college(form2)" #form2="ngForm" *ngIf="!isvalid;else academics">
+  <span>
+    <label for="career">Career Goal</label>
+    <textarea name="career"  cols="30" rows="10"  ngModel required>
+
+    </textarea>
+  </span>
+  <span>
+    <label for="academics">School :</label>
+    <input type="text" placeholder="course"  ngModel name="schdep"    required /> <br>
+    <input type="text" placeholder="school name" ngModel name="schname" required/><br>
+    <input type="text" placeholder="Year of pass" ngModel name="schyop" required/><br>
+    <input type="text" placeholder="percentage/cgpa" ngModel name="schper" required/><br>
+  </span>
+  <span>
+    <label for="academics">College :</label>
+    <input type="text" placeholder="course"  ngModel name="coldep" required/><br>
+    <input type="text" placeholder="college name" ngModel name="colname" required/><br>
+    <input type="text" placeholder="Year of pass" ngModel name="colyop" required/><br>
+    <input type="text" placeholder="percentage/cgpa" ngModel name="colper" required/><br>
+  </span>
+  <span>
+    <label for="academics">Graduation :</label>
+    <input type="text" placeholder="course"  ngModel name="gradep" required/><br>
+    <input type="text" placeholder="college name" ngModel name="graname" required/><br>
+    <input type="text" placeholder="Year of pass" ngModel name="grayop" required/><br>
+    <input type="text" placeholder="percentage/cgpa" ngModel name="graper" required/><br>
+  </span>
+  <button type="submit" >submit</button>
+</form>
+<ng-template #academics>
+
+    <div  > 
+        <p>hello</p>
+    </div>
+</ng-template>
+

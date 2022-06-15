@@ -1,0 +1,50 @@
+<form (ngSubmit)="Submit(form.value)" #form="ngForm">
+  <span>
+    <label for="skills">Skills :</label>
+    <textarea
+      type="text"
+      ngModel
+      name="skills"
+      #skill
+      placeholder="Leave it empty if its done"
+    ></textarea>
+    
+    <button (click)="addToSkill(skill.value)" type="button">Add</button>
+  </span>
+
+  <span>
+    <label for="hobbies">Hobbies :</label>
+    <input
+      type="text"
+      ngModel
+      name="hobbies"
+      placeholder="Leave it empty if its done"
+      #hobby
+    />
+    <button (click)="addToHobbies(hobby.value)"  type="button">Add</button>
+  </span>
+
+  <span>
+    <label for="Strenghts">Strenghts :</label>
+    <input
+      type="text"
+      ngModel
+      name="strenghts"
+      placeholder="Leave it empty if its done"
+      #strengths
+    />
+    <button (click)="addToStrengths(strengths.value)" type="button">Add</button>
+  </span>
+  <span>
+    <label for="weekness">Weekness :</label>
+    <input
+      type="text"
+      ngModel
+      name="weekness"
+      placeholder="Leave it empty if its done"
+      #weekness
+    />
+    <button (click)="addToWeekness(weekness.value)" type="button">Add</button>
+  </span>
+  <button>submit</button>
+</form>
